@@ -24,9 +24,8 @@ Create or use existing Telegram bot and retrieve those two keys infos:
 4) Run the docker-compose command: docker-compose -f docker-compose.yml --build
 
 ## Versions
-Listez les versions ici 
-**Dernière version stable :** N/A
-**Dernière version :** N/A
+**Last stable version :** N/A
+**Last version :** N/A
 
-## Auteurs
+## Authors
 * **Sylvain Lecornu** _alias_ [@sylvainlec](https://github.com/sylvainlec)
