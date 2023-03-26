@@ -4,7 +4,7 @@ import json
 class IpGetter:
     endpoint = 'https://ipinfo.io/json'
 
-    def get(self):
+    def get(self) -> str:
 
         response = requests.get(self.endpoint, verify = True)
 
