@@ -1,9 +1,12 @@
 import requests
-import os
+
+from appConfig import AppConfig
 
 class TelegramNotifier:
+    def __init__(self,config:AppConfig):
+        self.botToken=config.BotToken
+        self.chatId=config.ChatId
+
     def Log(self,message):
-        token=os.getenv("TELEGRAM_BOT_TOKEN")
-        chatId=os.getenv("TELEGRAM_CHAT_ID")
-        url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chatId}&text={message}"
+        url = f"https://api.telegram.org/bot{self.botToken}/sendMessage?chat_id={self.chatId}&text={message}"
         requests.get(url).json()
