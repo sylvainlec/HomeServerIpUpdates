@@ -1,0 +1,2 @@
+requests>2.0,<3.0
+opyoid=1.7.0
