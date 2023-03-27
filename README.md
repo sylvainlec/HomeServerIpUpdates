@@ -21,7 +21,9 @@ Create or use existing Telegram bot and retrieve those two keys infos:
 1) Place a .env file in he same folder as the docker-compose.yml
 2) Create variable TELEGRAM_BOT_TOKEN in the .env file: TELEGRAM_BOT_TOKEN=MyTelegramBotToken
 3) Create variable TELEGRAM_CHAT_ID in the .env file: TELEGRAM_CHAT_ID=MyTelegramChatId
-4) Run the docker-compose command: docker-compose up --build -d
+4) Create variable SLEEP_TIME_BETWEEN_CHECKS in the .env file: SLEEP_TIME_BETWEEN_CHECKS=3600
+   This variable represents the time in seconds between each ip check.
+5) Run the docker-compose command: docker-compose up --build -d
 
 ## Versions
 **Last stable version :** N/A
