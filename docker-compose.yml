@@ -9,7 +9,7 @@ services:
     # loaded into the docker-compose, but not into the 
     # docker-containers unless the variables are mapped in the 
     # environment option below or using the env_file option here.
-    env_file: .env
+    env_file: prod.env
     container_name: homeServerIpUpdates
     build:
       context: .

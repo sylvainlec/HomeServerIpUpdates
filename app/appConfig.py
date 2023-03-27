@@ -15,7 +15,7 @@ class EnvFileConfig(IConfig):
     def __init__(self):
         self._sleepTime:int=int(os.getenv("SLEEP_TIME_BETWEEN_CHECKS"))
         self._botToken:str=os.getenv("TELEGRAM_BOT_TOKEN")
-        self._chatId:str=os.getenv("TELEGRAM_CHAT_ID")
+        self._chatId:int=os.getenv("TELEGRAM_CHAT_ID")
 
     @property
     def SleepTime(self):
