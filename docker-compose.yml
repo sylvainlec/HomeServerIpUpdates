@@ -1,6 +1,7 @@
 version: '3'
 services:
-  my_component:
+  app:
+    image: ipservernotifyer:unstable
     # Here you can specify an env-file with variables
     # that can be used in the docker-container,
     # BUT these variables can not be used here in the
@@ -16,8 +17,9 @@ services:
       dockerfile: Dockerfile
     environment: # specify the env-variables here
       # secret ones in .env file or system
-      #TELEGRAM_BOT_TOKEN: ${MY_SECRET_VARIABLE}
-      #TELEGRAM_CHAT_ID: ${MY_SECRET_VARIABLE}
+      #TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      #TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID}
+      #SLEEP_TIME_BETWEEN_CHECKS: ${SLEEP_TIME_BETWEEN_CHECKS}
       # and public ones can be hardcoded
       #MY_PUBLIC_VARIABLE: Hello world
       # sometimes the console won't show print messages,
